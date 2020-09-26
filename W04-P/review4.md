@@ -10,6 +10,8 @@ HTML <selct> 태그와 php header 함수를 새로 배웠다.
 
 ### 문제가 발생하거나 고민한 내용 + 해결 과정
 <img src="https://user-images.githubusercontent.com/57151886/94344851-2ead4d00-005d-11eb-8c55-9de6a07c8a2f.png" width="500" height="auto">
+강의를 보면서 실습할땐 잘만들어지던 테이블이 과제를 하려고하니 에러가 났다. 무엇때문인지는 아직도 모르겠다. 
+오타난 부분도 없고 달라진건 CREATE TABLE 구문에서 테이블 이름뒤에 나오는 괄호의 줄바꿈 차이인데...이게 왜 오류가 나는건지 아직도 모르겠다...
  
 
 ### 참고할 만한 내용 
