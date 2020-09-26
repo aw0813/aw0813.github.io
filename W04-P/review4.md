@@ -23,8 +23,8 @@ https://www.w3schools.com/tags/tag_table.asp
 
 
 ### 회고
-https://youtu.be/PL_DtSvdeTI
+- 동작화면 https://youtu.be/PL_DtSvdeTI
 
-저번 주에 강의를 미루다가 과제를 지각제출해서 이번 주는 좀 빨리 하려고 노력해봤다..
+- 저번 주에 강의를 미루다가 과제를 지각제출해서 이번 주는 좀 빨리 하려고 노력해봤다..
 
 table 태그도 3년전에 배웠었는데 새로 배우는 것처럼 새로웠다.
