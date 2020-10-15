@@ -22,6 +22,19 @@
     <input type="submit" value="Delete">
     </form>
 
-    <a href="salary_info.php">(5) 연봉 정보 </a>
+    <form action="salary_info.php" method="GET">
+    (5) 연봉 정보: 
+    <br>
+    <input type="text" name="number" placeholder="number">
+    <input type="submit" value="Search">
+    </form>
+
+    <form action="emp_info.php" method="GET">
+    (6) 직원 부서, 연봉 조회: 
+    <br>
+    <input type="text" name="emp_no" placeholder="직원 번호를 입력하세요">
+    <input type="submit" value="Search">
+    </form>
+
 </body>
 </html>

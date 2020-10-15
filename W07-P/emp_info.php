@@ -6,29 +6,29 @@
         exit();
     }
 
-    $number = mysqli_real_escape_string($link, $_GET['number']);
+    $emp_no = mysqli_real_escape_string($link, $_GET['emp_no']);
     $query = "
-        SELECT first_name, last_name, salary, from_date, to_date
-        FROM salaries
-        LEFT JOIN employees
-        ON salaries.emp_no = employees.emp_no        
-        ORDER BY salary DESC
-        LIMIT ".$number;
+        SELECT e.emp_no, e.first_name, e.last_name, de.dept_name, t.title
+        FROM employees e
+        INNER JOIN dept_emp dp ON e.emp_no=dp.emp_no
+        INNER JOIN departments de ON dp.dept_no=de.dept_no
+        INNER JOIN titles t ON e.emp_no=t.emp_no
+        WHERE e.emp_no=".$emp_no;
 
     $result = mysqli_query($link, $query);  
 
     $article = '';    
     while($row = mysqli_fetch_array($result)){
         $article .= '<tr><td>';
+        $article .= $row["emp_no"];
+        $article .= '</td><td>';
         $article .= $row["first_name"];
         $article .= '</td><td>';
         $article .= $row["last_name"];
         $article .= '</td><td>';
-        $article .= $row["salary"];
+        $article .= $row["dept_name"];
         $article .= '</td><td>';
-        $article .= $row["from_date"];
-        $article .= '</td><td>';
-        $article .= $row["to_date"];
+        $article .= $row["title"];
         $article .= '</td></tr>';
     }
     
@@ -41,7 +41,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>연봉 정보</title>
+    <title>직원 부서, 연봉 정보</title>
     <style>
         body {
             font-family: Consolas, monospace;
@@ -57,14 +57,14 @@
     </style>
 </head>
 <body>
-    <h2><a href="index.php">직원 관리 시스템</a> | 연봉 정보</h2>
+    <h2><a href="index.php">직원 관리 시스템</a> | 부서, 연봉 정보</h2>
     <table style = "text-align: center;">
         <tr>
+            <th>emp_no</th>
             <th>first_name</th>
             <th>last_name</th>
-            <th>salary</th>
-            <th>from_date</th>
-            <th>to_date</th>
+            <th>department</th>
+            <th>title</th>
         </tr>        
         <?= $article ?> 
     </table>
