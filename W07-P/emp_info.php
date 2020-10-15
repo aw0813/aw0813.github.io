@@ -41,7 +41,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>직원 부서, 연봉 정보</title>
+    <title>직원 부서, 업무 정보</title>
     <style>
         body {
             font-family: Consolas, monospace;
@@ -57,7 +57,7 @@
     </style>
 </head>
 <body>
-    <h2><a href="index.php">직원 관리 시스템</a> | 부서, 연봉 정보</h2>
+    <h2><a href="index.php">직원 관리 시스템</a> | 부서, 업무 정보</h2>
     <table style = "text-align: center;">
         <tr>
             <th>emp_no</th>

@@ -30,7 +30,7 @@
     </form>
 
     <form action="emp_info.php" method="GET">
-    (6) 직원 부서, 연봉 조회: 
+    (6) 직원 부서, 업무 조회: 
     <br>
     <input type="text" name="emp_no" placeholder="직원 번호를 입력하세요">
     <input type="submit" value="Search">
