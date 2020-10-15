@@ -2,9 +2,11 @@
 
 ### 새로 배운 내용
 
-- select e.*
+- select e.*<br>
 from employees e
+
 inner join dept_emp de on de.emp_no=e.emp_no
+
 where de.to_date=’9999-01-01’;
 에서 e는 약자로 사용된 것
 
