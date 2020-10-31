@@ -5,7 +5,9 @@
     <title> World DataBase </title>
     <style type="text/css" >
     html{height: 100%;}
-    body{text-align : center; position: relative; width: 100%; height: 100%;}
+    body{text-align : center; position: relative; width: 100%; height: 100%;
+        background-image : url('https://user-images.githubusercontent.com/57151886/97786963-624a3c80-1bf2-11eb-87cb-64138983418f.png');
+        background-size: 100% 100%; background-color: rgba( 255, 255, 255, 0.5 );}
     #wrapper {position: absolute; top: 50%; left: 50%; margin:-150px 0 0 -150px}
     </style>
 </head>
