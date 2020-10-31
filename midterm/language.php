@@ -1,12 +1,17 @@
 <?php 
     $link = mysqli_connect('localhost', 'admin', 'admin', 'world');
-    $query = "SELECT * from city WHERE countrycode='kor'";
+    $query = "SELECT * from countrylanguage WHERE countrycode='kor'";
 
     $city = '';
+    $country = 'South Korea';
 
     if(isset($_GET['code'])){
         $filtered_city = mysqli_real_escape_string($link, $_GET['code']);
-        $query = " SELECT * from city WHERE countrycode='{$filtered_city}'";
+        $query = " SELECT * from countrylanguage WHERE countrycode='{$filtered_city}'";
+        $country_q = "SELECT Name from country WHERE code='{$filtered_city}'";
+        $country_r = mysqli_query($link, $country_q);
+        $country_row = mysqli_fetch_array($country_r);
+        $country = $country_row['Name'];
     }
 
 
@@ -15,9 +20,8 @@
 
     while($row = mysqli_fetch_array($result)){
         $city .= '<tr>';
-        $city .= '<td>'.$row['Name'].'</td>';
-        $city .= '<td>'.$row['Population'].'</td>';
-        $city .= '<td>'.$row['District'].'</td>';
+        $city .= '<td>'.$row['Language'].'</td>';
+        $city .= '<td>'.$row['Percentage'].'</td>';
         $city .= '</tr>';
     }
 ?>
@@ -29,17 +33,10 @@
     <title> World DataBase </title>
 </head>
 <body>
-    <h2><a href ="index.php">세계 정보</a> | 도시별 인구수</h2>
+    <h2><a href ="index.php">세계 정보</a> | 국가별 사용 언어</h2>
 
-    <!-- <form action = "city.php" method = "POST">
-        <select name="country">
-            <option value="">국가 선택</option>
-            <option value="<?= $code ?>"><?= $country ?></option>
-        </select>
-        <button type="submit">확인</button>
-    </form> -->
 
-    <form action = "city.php" method = "GET">
+    <form action = "language.php" method = "GET">
         <select name="code">   
             <option value="">국가 선택</option>
             <?php
@@ -48,10 +45,10 @@
                             ON a.Code = b.CountryCode
                     ORDER BY a.Name;";
                     $result = mysqli_query($link, $sql);
-                    while ($row = mysqli_fetch_array($result)){
-                        print "<option value='".$row['Code']."' ";
+                    while ($row2 = mysqli_fetch_array($result)){
+                        print "<option value='".$row2['Code']."' ";
                     
-                        print ">".$row['Name']."</option>\n";
+                        print ">".$row2['Name']."</option>\n";
                     }
             ?>
         </select>
@@ -60,13 +57,12 @@
 
     <br>
     <table border=1 cellspacing=0 cellpadding=5 style="text-align:center;">
+        <caption><?=$country?></caption>
         <tr>
-            <th>도시명</th>
-            <th>인구수</th>
-            <th>행정 구역</th>
+            <th>사용 언어</th>
+            <th>비율(%)</th>
         </tr>
         <?= $city ?>
-
     </table>
 </body>
 </html>
