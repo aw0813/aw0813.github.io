@@ -61,7 +61,7 @@
         <caption><?=$country?></caption>
         <tr>
             <th>도시명</th>
-            <th>인구수</th>
+            <th>인구수(명)</th>
             <th>행정 구역</th>
         </tr>
         <?= $city ?>

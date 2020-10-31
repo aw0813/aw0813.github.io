@@ -2,7 +2,7 @@
     $link = mysqli_connect('localhost', 'admin', 'admin', 'world');
     $query = "SELECT * from countrylanguage WHERE countrycode='kor'";
 
-    $city = '';
+    $lang = '';
     $country = 'South Korea';
 
     if(isset($_GET['code'])){
@@ -19,10 +19,10 @@
     $result = mysqli_query($link, $query);
 
     while($row = mysqli_fetch_array($result)){
-        $city .= '<tr>';
-        $city .= '<td>'.$row['Language'].'</td>';
-        $city .= '<td>'.$row['Percentage'].'</td>';
-        $city .= '</tr>';
+        $lang .= '<tr>';
+        $lang .= '<td>'.$row['Language'].'</td>';
+        $lang .= '<td>'.$row['Percentage'].'</td>';
+        $lang .= '</tr>';
     }
 ?>
 
@@ -62,7 +62,7 @@
             <th>사용 언어</th>
             <th>비율(%)</th>
         </tr>
-        <?= $city ?>
+        <?= $lang ?>
     </table>
 </body>
 </html>
