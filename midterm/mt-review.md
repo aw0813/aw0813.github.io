@@ -10,9 +10,7 @@
  
 
 ### 참고할만한 내용
-- http://alex-td.blogspot.com/2013/01/simulation-of-outer-joins-in-jasper.html 
-
-world 데이터베이스의 구조를 파악하기 위해 참고
+- http://alex-td.blogspot.com/2013/01/simulation-of-outer-joins-in-jasper.html world 데이터베이스의 구조를 파악하기 위해 참고
 
 ### 회고
 - git 사용법이 아직 미숙해서 그런지 push가 자꾸 안되는 상황이 일어났다. 한번 해결하고 나니 똑같은 오류가 안났으면 하는 생각에 파일 하나 수정할 때 마다 pull, add, commit, push를 습관적으로 하게 되었다.
