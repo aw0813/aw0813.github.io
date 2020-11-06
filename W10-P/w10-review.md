@@ -4,7 +4,7 @@
 
 - 데이터베이스 프로그래밍을 하려면 호스트언어, DBMS, 운영체제, 컴퓨터 기종(CPU종류)를 선택해야 한다.
 - Oracle의 간략한 역사
-- connect system 연결, show user, exit 종료
+- Ocacle XE: connect system 연결, show user, exit 종료
 ### 문제가 발생하거나 고민한 내용 + 해결 과정
 
  
