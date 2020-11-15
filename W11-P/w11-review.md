@@ -12,4 +12,4 @@
 
 
 ### 회고
-- departments 테이블을 조회, 새로운 부서를 추가, 추가한 부서의 location_id를 수정, 마지막에 추가된 부서를 삭제하는 <a href="https://youtu.be/ESJ-X33Y7as"동작화면</a>
+- departments 테이블을 조회, 새로운 부서를 추가, 추가한 부서의 location_id를 수정, 마지막에 추가된 부서를 삭제하는 <a href="https://youtu.be/ESJ-X33Y7as">동작화면</a>
