@@ -19,7 +19,7 @@ request, response, pageContext, session, application, config, out, page, excepti
 
 
 ### 문제가 발생하거나 고민한 내용 + 해결 과정
-- 이클립스에서 오라클 연결할 때 오류가 발생했다. 구글링해서 이것 저것 해보았으나 해결이 되지않았는데 슬랙 qna를 참고해 커넥션 url의 sever를 localhost로 바꾸어주고 1521을 1522로 수정하니 정상적으로 연결되었다.
+- 이클립스에서 오라클 연결할 때 오류가 발생했다. 구글링해서 리스너도 재실행해보고 이것 저것 해보았으나 해결이 되지않았는데 슬랙 qna를 참고해 커넥션 url의 sever를 localhost로 바꾸어주고 1521을 1522로 수정하니 정상적으로 연결되었다.
 
 ### 참고할만한 내용
 - https://ssimplay.tistory.com/204 이클립스에 dynamic web project가 없어 참고
