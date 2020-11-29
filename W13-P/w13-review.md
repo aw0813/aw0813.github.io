@@ -10,7 +10,6 @@
 <% 자바 코드 %>
 - Declarations (선언문) <%! %>
 서블릿 클래스의 멤버(변수, 메소드)를 선언할 때 사용
-작성 위치는 상관 없음
 - Expressions (표현식) <%= %> 문자열 출력
 3. JSP 내장 객체 : JSP 기술 사양 에 정의된 필수적인 9개 객체(별도 선언 없이 사용 가능)
 request, response, pageContext, session, application, config, out, page, exception
@@ -26,4 +25,5 @@ request, response, pageContext, session, application, config, out, page, excepti
 
 
 ### 회고
+<a href="https://youtu.be/SHeR4p6krQU">동작화면</a>
 - 커넥션 url 수정하는 걸 계속 까먹는다...잊지말기
