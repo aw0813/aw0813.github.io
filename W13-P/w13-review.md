@@ -26,4 +26,5 @@ request, response, pageContext, session, application, config, out, page, excepti
 
 ### 회고
 - 삭제 기능을 추가하였다. <a href="https://youtu.be/SHeR4p6krQU">동작화면</a>
+- JSP는 처음 써봐서 새로웠다. 
 - 커넥션 url 수정하는 걸 계속 까먹는다...잊지말기
