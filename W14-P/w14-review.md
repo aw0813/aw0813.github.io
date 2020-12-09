@@ -14,5 +14,5 @@
  
 
 ### 회고
-<a href="https://youtu.be/Hhi1B-AgE0w"> 동작화면 </
+<a href="https://youtu.be/Hhi1B-AgE0w" 동작화면 > 
 - NoSQL을 처음 경험해봐서 신기했다. 
